@@ -5,6 +5,7 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
 import { StudentComponent } from './student/student.component';
 
 const routes: Routes = [
+  {path:"",redirectTo:"login",pathMatch:"full"},
   { path:"studentLink" , component:StudentComponent},
   {path:"studentDetailsLink",component:StudentDetailsComponent},
   {path:"login",component:LoginComponent}
